@@ -10,6 +10,10 @@ import injectContext from "./store/appContext";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 
+import DetailPeople from "/workspaces/blog-starwars-mf-gonzalez-p33/src/js/component/detailPeople.js";
+import DetailVehicle from "/workspaces/blog-starwars-mf-gonzalez-p33/src/js/component/detailVehicles.js";
+import DetailPlanet from "/workspaces/blog-starwars-mf-gonzalez-p33/src/js/component/detailPlanets.js";
+
 //create your first component
 const Layout = () => {
 	//the basename is used when your project is published in a subdirectory and not in the root of the domain
@@ -26,6 +30,9 @@ const Layout = () => {
 						<Route path="/demo" element={<Demo />} />
 						<Route path="/single/:theid" element={<Single />} />
 						<Route path="*" element={<h1>Not found!</h1>} />
+						<Route path="/people/:id" element={<DetailPeople/>} />
+						<Route path="/vehicle/:id" element={<DetailVehicle/>} />
+						<Route path="/planet/:id" element={<DetailPlanet/>} />
 					</Routes>
 					<Footer />
 				</ScrollToTop>

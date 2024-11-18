@@ -1,0 +1,40 @@
+.card-img-fixed {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.placeholder-img {
+    display: block;
+    object-position: center;
+}
+
+.card-hover:hover {
+    box-shadow: 4px 4px 8px rgba(255, 217, 0, 0.548);
+    transform: translateY(-10px);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.background {
+    background-image: url('https://unsplash.com/es/fotos/el-cielo-nocturno-esta-lleno-de-estrellas-Q_RBVFFXR_g');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+body {
+    background-color: black;
+    color: white; /* Opcional: para asegurarte de que el texto sea legible */
+}
